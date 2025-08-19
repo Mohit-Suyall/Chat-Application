@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZaykaBox Style Food Website</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="light-mode">
+  <nav class="food-navbar d-flex" style="margin-bottom: 30px;">
+    <div class="zaykabox-logo-container">
+      <span class="zaykabox-logo-text">ZaykaBox</span>
+    </div>
+    <div class="nav-btns ms-auto">
+      <a href="#">ZaykaBox Corporate</a>
+      <a href="#">Partner with us</a>
+      <button class="btn btn-app" type="button">Get the app ↗️</button>
+      <button class="btn btn-signin" type="button">Sign in</button>
+      <button id="mode-toggle" aria-label="Toggle dark and light mode" type="button">Toggle Dark/Light Mode</button>
+    </div>
+  </nav>
+
+
+  <!-- Main Content -->
+  <div id="main" class="container">
+    <h1>Order food & groceries. Discover best restaurants. ZaykaBox it!</h1>
+
+    <!-- Search Boxes -->
+    <div class="search-group">
+      <div class="search-container">
+        <div class="input-group mb-2">
+          <input type="search" class="form-control" id="search-input-location" placeholder="Search city, restaurant..." aria-label="Search city or restaurant" />
+          <button class="btn btn-warning" type="button" id="search-btn-location">Search</button>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <div class="input-group mb-2">
+          <input type="search" class="form-control" id="search-input-food" placeholder="Search food item..." aria-label="Search food item" />
+          <button class="btn btn-warning" type="button" id="search-btn-food">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discounts -->
+    <div class="discount">
+      <div class="first-dis" tabindex="0">
+        <h1>FOOD delivery<br />From Restaurant</h1>
+        <img src="gift1.jpeg" alt="Delicious food" />
+        <h2>Up to 60% off</h2>
+      </div>
+      <div class="first-dis" tabindex="0">
+        <h1>FOOD delivery<br />From Restaurant</h1>
+        <img src="gift2.jpg" alt="Tasty dishes" />
+        <h2>Up to 60% off</h2>
+      </div>
+      <div class="first-dis" tabindex="0">
+        <h1>FOOD delivery<br />From Restaurant</h1>
+        <img src="gift3.jpeg" alt="Fresh food" />
+        <h2>Up to 60% off</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- menu -->
+  <div id="food-corner-section" class="container py-5">
+    <h2 class="text-center mb-3" style="color:#ff7043;">Food Corner</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3" style="max-width: 900px; margin: 0 auto;">
+      <button id="left-btn" class="scroll-btn btn" type="button" aria-label="Scroll left"><span style="font-size:1.8rem;">&#8678;</span></button>
+      <button id="right-btn" class="scroll-btn btn" type="button" aria-label="Scroll right"><span style="font-size:1.8rem;">&#8680;</span></button>
+    </div>
+    <div class="food-scroll-row" id="food-scroll-row" tabindex="0" aria-label="Scrollable food list">
+      <!-- Grouped pair in each column -->
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="burger.jpg" alt="Burger" />
+          <h5>Burger</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="pizza.jpeg" alt="Pizza" />
+          <h5>Pizza</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="chole.jpg" alt="Chole Bhature" />
+          <h5>Chole Bhature</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="chines.jpeg" alt="Chinese" />
+          <h5>Chinese</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="sand.jpeg" alt="Sandwich" />
+          <h5>Sandwich</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="frenchfry.webp" alt="Fries" />
+          <h5>Fries</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="pasta.jpeg" alt="Pasta" />
+          <h5>Pasta</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="momo.jpeg" alt="Momos" />
+          <h5>Momos</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="chiken.jpg" alt="Chicken" />
+          <h5>Chicken</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="biryani.jpeg" alt="Biryani" />
+          <h5>Biryani</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="dalchawal.jpeg" alt="Dal Chawal" />
+          <h5>Dal Chawal</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="panipuri.jpg" alt="Pani Puri" />
+          <h5>Pani-Puri</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="samosa.jpg" alt="Samosa" />
+          <h5>Samosa</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="dalmakhni.jpeg" alt="Dal Makhani" />
+          <h5>Dal Makhani</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="litthi.jpg" alt="Litti Chokha" />
+          <h5>Litti Chokha</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="dosa.jpeg" alt="Dosa" />
+          <h5>Simple Dosa</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="poha.jpeg" alt="Poha" />
+          <h5>Poha</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="idli.jpeg" alt="Idli" />
+          <h5>Idli Sambar</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="jalebhi.jpeg" alt="Jalebi" />
+          <h5>Jalebi</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="rbdhi.jpeg" alt="Rabdi" />
+          <h5>Rabdi</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="tikki.jpeg" alt="Tikki" />
+          <h5>Tikki</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="gajar.avif" alt="Gajar Ka Halwa" />
+          <h5>Gajar Ka Halwa</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="coffe.jpg" alt="Coffee" />
+          <h5>Coffee</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="aloo parathe.jpg" alt="Aloo Paratha" />
+          <h5>Aloo Paratha</h5>
+        </div>
+      </div>
+      <div class="food-col">
+        <div class="food-card text-center">
+          <img src="khir.jpg" alt="Kheer" />
+          <h5>Kheer</h5>
+        </div>
+        <div class="food-card text-center">
+          <img src="Vada-Pav.jpg" alt="Vada Pav" />
+          <h5>Vada Pav</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Restaurants Horizontal Scroll Section -->
+  <div id="restrodent" class="container">
+    <h1>Discover best restaurants on Dineout</h1>
+    <div class="scroll-row" tabindex="0" aria-label="Restaurant list scroll container">
+      <div class="hotal1" tabindex="0">
+        <img src="res1.jpeg" alt="Cafe Mocha Bliss" />
+        <h1>Café Mocha Bliss</h1>
+        <p>4.7 🟢</p>
+        <p class="place">Connaught Place, Delhi</p>
+        <p>Distance 0.8km</p>
+        <button type="button">Table Booking</button>
+        <div class="discount"><h3>25% Flat off on pre-booking +5 more</h3></div>
+      </div>
+      <div class="hotal1" tabindex="0">
+        <img src="res2.jpg" alt="Bistro Aura" />
+        <h1>Bistro Aura</h1>
+        <p>4.5 🟢</p>
+        <p class="place">Koramangala, Bangalore</p>
+        <p>Distance 1.1km</p>
+        <button type="button">Table Booking</button>
+        <div class="discount"><h3>20% Flat off +5 more</h3></div>
+      </div>
+      <div class="hotal1" tabindex="0">
+        <img src="res3.jpeg" alt="Spice Route" />
+        <h1>Spice Route</h1>
+        <p>4.6 🟢</p>
+        <p class="place">Bandra, Mumbai</p>
+        <p>Distance 2km</p>
+        <button type="button">Table Booking</button>
+        <div class="discount"><h3>30% Flat off on pre-booking</h3></div>
+      </div>
+      <div class="hotal1" tabindex="0">
+        <img src="res5.jpeg" alt="Green Leaf" />
+        <h1>Green Leaf</h1>
+        <p>4.2 🟢</p>
+        <p class="place">Gurgaon Sector 29</p>
+        <p>Distance 1.3km</p>
+        <button type="button">Table Booking</button>
+        <div class="discount"><h3>35% Flat off +10% cashback</h3></div>
+      </div>
+      <div class="hotal1" tabindex="0">
+        <img src="res4.jpeg" alt="Urban Grill" />
+        <h1>Urban Grill</h1>
+        <p>4.8 🟢</p>
+        <p class="place">Salt Lake, Kolkata</p>
+        <p>Distance 1.7km</p>
+        <button type="button">Table Booking</button>
+        <div class="discount"><h3>40% Flat off + Free mocktail</h3></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <div id="review" class="container">
+    <h1>THEY TRUSTED US</h1>
+    <h3>We are very happy because <br />We have happy customers</h3>
+    <div id="rating" class="row justify-content-center g-4">
+      <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+        <div class="review-card">
+          <img src="3p.jpg" alt="Jackob" />
+          <h1>Jackob</h1>
+          <p>"Ordered breakfast for office – piping hot samosas and coffee, delivered before time. The app is intuitive, and the live tracking feature is awesome!".</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+        <div class="review-card">
+          <img src="2p.jpeg" alt="Sem" />
+          <h1>Sem</h1>
+          <p>"I got a flat 50% off on my first pre-booking! Food was excellent, discounts are real, and Swiggy never disappoints. Total value for money."</p>
+          <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+        <div class="review-card">
+          <img src="4p.jpeg" alt="Simi" />
+          <h1>Simi</h1>
+          <p>"The city's best restaurants at my fingertips! Even late at night, delivery is reliable. Once my order was delayed but customer support resolved it quickly."</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center offset-lg-2">
+        <div class="review-card">
+          <img src="5p.jpeg" alt="Rehana" />
+          <h1>Rehana</h1>
+          <p>"As a working mom, Swiggy’s instant grocery and meal delivery has saved my day countless times. Everything arrives safely packed and neatly delivered. Great service!"</p>
+          <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+        <div class="review-card">
+          <img src="1p.jpeg" alt="Denil" />
+          <h1>Denil</h1>
+          <p>"Absolutely love how quick and fresh my food arrives every time! Swiggy has made our family dinners so much easier and tastier. Highly recommend to all my foodie friends."</p>
+          <div class="stars">⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="d-flex justify-content-center mt-4">
+      <button type="button" class="btn-viewmore" id="btnViewMore">View more</button>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer" class="row container mx-auto">
+    <div id="comapney" class="col-lg-2 col-md-6 col-6">
+      <h1>Company</h1>
+      <a href="#"><p>About us <br /><br />Careers <br /><br />Team <br /><br />Pyng</p></a>
+    </div>
+    <div id="Contect" class="col-lg-2 col-md-6 col-6">
+      <h1>Contect us</h1>
+      <a href="#"><p>Help & Support <br /><br />Partner with us</p></a>
+    </div>
+    <div id="legal" class="col-lg-2 col-md-6 col-6">
+      <h1>Legal</h1>
+      <a href="#"><p>Terms & Condition <br /><br />Cookie Policy <br /><br />Privacy Policy</p></a>
+    </div>
+    <div id="Availiable" class="col-lg-2 col-md-6 col-6">
+      <h1>Available in:</h1>
+      <a href="#">
+        <p>Bangalore <br /><br />Gurgaon <br /><br />Delhi <br /><br />Mumbai</p>
+      </a>
+      <div class="custom-select">
+        <select name="indian-cities" id="indian-cities" aria-label="Select Indian City">
+          <option value="" disabled selected>Select an Indian city</option>
+          <option value="gzb">Gajiyabad</option>
+          <option value="simla">Simla</option>
+          <option value="delhi">New Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="chennai">Chennai</option>
+          <option value="hyderabad">Hyderabad</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="pune">Pune</option>
+          <option value="nainital">Nainital</option>
+          <option value="almora">Almora</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="kanpur">Kanpur</option>
+          <option value="prayagraj">Prayagraj</option>
+        </select>
+      </div>
+    </div>
+    <div id="life" class="col-lg-2 col-md-6 col-6">
+      <h1>Life at ZaykaBox</h1>
+      <a href="#"><p>Explore with ZaykaBox <br /><br />ZaykaBox News <br /><br />Snakables</p></a>
+    </div>
+    <div id="icon" class="col-lg-2 col-md-6 col-6">
+      <h1 style="padding-top:15px;">Social Links</h1>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Promo -->
+  <div class="app-promo-section">
+    <hr />
+    <h3>For better experience, download the ZaykaBox app now</h3>
+    <div class="appstore-row">
+      <button class="app-btn" type="button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store Logo" />
+        <span class="app-btn-content text-start">
+          <h3>Download on the</h3>
+          <h1>App Store</h1>
+        </span>
+      </button>
+      <button class="app-btn" type="button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store Logo" />
+        <span class="app-btn-content text-start">
+          <h3>Download on the</h3>
+          <h1>Play Store</h1>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+
+</body>
+</html>
